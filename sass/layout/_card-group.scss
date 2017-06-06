@@ -2,13 +2,16 @@
   background-color: $background-color;
   padding-top: 40px;
   overflow: auto;
-    z-index: 100;
+  @media #{$breakpoint-medium} {
+    width:100%;
+    padding: 5% 10%;
+  }
 }
 
 .card {
   position: relative;
   background-color: white;
-  margin: 20px 20px 70px 20px;
+  margin: 5% 2.5% 15% 2.5%;
   padding: 40px;
   text-align: center;
   i {
@@ -21,6 +24,9 @@
     color: white;
     font-size: 4em;
     border-radius: 100%;
+    @media #{$breakpoint-medium} {
+      top: -13%;
+    }
   }
   h3 {
     font-size: 2em;
@@ -31,4 +37,14 @@
   p {
     color: $secondary-color;
   }
+   @media #{$breakpoint-small} {
+     float:left;
+     width:45%;
+     margin-bottom: 7%;
+   }
+   @media #{$breakpoint-medium} {
+     float:left;
+     width:23%;
+     margin: 5% 1% 7% 1%;
+   }
 }

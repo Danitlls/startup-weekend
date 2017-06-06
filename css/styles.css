@@ -14,16 +14,6 @@
   width: 100%;
 }
 
-button {
-  border: none;
-  border-radius: 10px;
-  padding: 18px;
-  color: #3ccf80;
-  background-color: white;
-  font-size: 25px;
-  font-weight: 700;
-}
-
 .nav-wrapper {
   background-color: white;
 }
@@ -36,9 +26,27 @@ button {
   color: white;
 }
 .title h1 {
+  font-size: 2.2em;
   padding-bottom: 20px;
   font-weight: 900;
-  font-size: 2.2em;
+}
+@media only screen and (min-width: 768px) {
+  .title h1 {
+    font-size: 2.8em;
+  }
+}
+.title p {
+  line-height: 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  .title p {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    text-align: center;
+  }
 }
 
 .logo {
@@ -48,9 +56,19 @@ button {
 .logo img {
   width: 100%;
 }
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 40%;
+  }
+}
 
 .search-bar {
   display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .search-bar {
+    display: inline;
+  }
 }
 
 .nav-bar {
@@ -103,13 +121,18 @@ button {
   background-color: #f4f4f4;
   padding-top: 40px;
   overflow: auto;
-  z-index: 100;
+}
+@media only screen and (min-width: 1024px) {
+  .card-group {
+    width: 100%;
+    padding: 5% 10%;
+  }
 }
 
 .card {
   position: relative;
   background-color: white;
-  margin: 20px 20px 70px 20px;
+  margin: 5% 2.5% 15% 2.5%;
   padding: 40px;
   text-align: center;
 }
@@ -124,6 +147,11 @@ button {
   font-size: 4em;
   border-radius: 100%;
 }
+@media only screen and (min-width: 1024px) {
+  .card i {
+    top: -13%;
+  }
+}
 .card h3 {
   font-size: 2em;
   font-weight: 700;
@@ -132,6 +160,30 @@ button {
 }
 .card p {
   color: #808080;
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    float: left;
+    width: 45%;
+    margin-bottom: 7%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    float: left;
+    width: 23%;
+    margin: 5% 1% 7% 1%;
+  }
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  color: #3ccf80;
+  background-color: white;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
