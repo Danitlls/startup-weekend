@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.2.1.js"></script>
     <script type="js/scripts.js"></script>
@@ -12,71 +13,62 @@
     <div class="wrapper">
       <div class="header">
         <nav>
-          <div class="nav-wrapper">
-            <div class="row">
-              <div class="col s4">
-                <img src="img/logo.svg" alt="logo" />
-              </div>
-              <form class="col s4">
-                <div class="input-field col s8 hide-on-med-and-down">
-                  <i class="material-icons prefix ">search</i>
-                  <input id="icon_prefix" type="text" placeholder="Find an Event">
-                </div>
-              </form>
-              <a href="#" data-activates="slide-out" class="right button-collapse"><i class="material-icons">menu</i></a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">Explore Events</a></li>
-                <li><a href="#">More</a></li>
-                <li><a href="#"><i class="material-icons">info_outline</i></a></li>
-              </ul>
+          <div class="nav-bar">
+            <div class="logo">
+              <img src="img/sw-logo-black.svg" alt="logo" />
             </div>
+            <form class="search-bar">
+              <i class="material-icons">search</i>
+              <input id="icon_prefix" type="text" placeholder="Find an Event">
+            </form>
+            <a href="#" data-activates="slide-out"><i class="material-icons">menu</i></a>
+            <ul>
+              <li><a href="#">Explore Events</a></li>
+              <li><a href="#">More</a></li>
+              <li><a href="#"><i class="material-icons">info_outline</i></a></li>
+            </ul>
           </nav>
         </div>
         <div class="title">
           <h1>Learn, Network, Startup</h1>
           <p>In just 54 hours, you will experience the highs, lows, fun, and pressure that make up life at a startup. As you learn how to create a real company, you'll meet the very best mentors, investors, cofounders, and sponsors who are ready to help you get started. Your community is here to help you — find an event today!</p>
         </div>
+        <div class="event-search">
+          <h3>Find an event near</h3>
+          <form>
+            <input type="text" name="name" placeholder="United States">
+            <button type="button" name="Go!">Go!</button>
+          </form>
+          <h4>Or use my location</h4>
+        </div>
       </div>
-      <!-- <div class="search">
-        <h3>Find an event near</h3>
-        <form>
-          <div class="input-field">
-            <input type="text">
-            <div>
-              <span>Go!</span>
-              <input type="button">
-            </div>
-          </div>
-        </form>
-        <h4>Or use my current location</h4>
-      </div> -->
-
       <div class="main">
         <h2>The hardest part of starting up is starting out. At Startup Weekend, you'll be immersed in the ideal environment for startup magic to happen.</h2>
         <h3>Surrounded by smart, passionate people and with the best tools and approaches at your disposal, you’ll take giant leaps toward creating a business, becoming a founder, and connecting with the right people and resources.</h3>
-        <div class="row">
-          <div class="card-panel  col s12 m6 l3 ">
-            <a class="btn-floating waves-effect waves-light blue"><i class="material-icons">language</i></a>
-            <span class="card-title activator ">Connect</span>
-            <span class="white-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</span>
-          </div>
-          <div class="card-panel  col s12 m6 l3 ">
-            <a class="btn-floating waves-effect waves-light blue"><i class="material-icons">my_location</i></a>
-            <span class="card-title activator ">Discover</span>
-            <span class="white-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</span>
-          </div>
-          <div class="card-panel  col s12 m6 l3 ">
-            <a class="btn-floating waves-effect waves-light blue"><i class="material-icons">supervisor_account</i></a>
-            <span class="card-title activator ">Learn</span>
-            <span class="white-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</span>
-          </div>
-          <div class="card-panel  col s12 m6 l3 ">
-            <a class="btn-floating waves-effect waves-light blue"><i class="material-icons">play_circle_outline</i></a>
-            <span class="card-title activator ">Start</span>
-            <span class="white-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</span>
-          </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <i class="material-icons">language</i>
+          <h3 class="card-title">Connect</h3>
+          <p class="card-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</p>
+        </div>
+        <div class="card">
+          <i class="material-icons">my_location</i>
+          <h3 class="card-title">Discover</h3>
+          <p class="card-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</p>
+        </div>
+        <div class="card">
+          <a><i class="material-icons">supervisor_account</i></a>
+          <h3 class="card-title">Learn</h3>
+          <p class="card-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</p>
+        </div>
+        <div class="card">
+          <i class="material-icons">play_circle_outline</i>
+          <h3 class="card-title">Start</h3>
+          <p class="card-text">Connect with people driven to build something new. Rich and diverse talent is a Startup Weekend staple.<br>Are you ready to meet your next (cofounder) (friend) (mentor) (investor)?</p>
         </div>
       </div>
+
     </div>
   </body>
 </html>

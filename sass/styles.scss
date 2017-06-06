@@ -1,2 +1,5 @@
-@import "vendors/materialize.scss";
-@import "layout/_navegation.css"
+@import "abstracts/main";
+@import "base/main";
+@import "components/main";
+@import "layout/main";
+@import "vendors/main";

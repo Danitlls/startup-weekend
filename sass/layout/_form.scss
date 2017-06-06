@@ -1,0 +1,18 @@
+.event-search{
+  background-color: $main-color;
+  text-align: center;
+  color: white;
+  padding: 8% 0;
+  input{
+    width: 65%;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    border: solid white 2px;
+    background-color: $main-color;
+    &::placeholder {
+      color: white;
+      font-size: 2em;
+    }
+  }
+}

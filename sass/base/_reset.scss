@@ -1,0 +1,13 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+}

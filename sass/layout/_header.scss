@@ -1,0 +1,41 @@
+.nav-wrapper {
+  background-color: white;
+}
+
+.title {
+  background-image: url("../img/sw-hero-home.png");
+  clear: both;
+  width: 100%;
+  padding: 30px 30px 60px 30px;
+  color: white;
+  h1{
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 2.2em;
+  }
+}
+
+.logo {
+  float: left;
+  width: 60%;
+  img {
+    width: 100%;
+  }
+}
+
+.search-bar {
+  display: none;
+}
+
+.nav-bar {
+  padding: 15px;
+  overflow: auto;
+
+  ul {
+  display: none;
+  }
+
+  a {
+  float: right;
+  }
+}
